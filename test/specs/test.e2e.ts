@@ -5,7 +5,6 @@ import SecurePage from '../pageobjects/secure.page'
 describe('My Login application', () => {
     it('should login with valid credentials', async () => {
         // await LoginPage.open()
-
         await LoginPage.login('Create new event or other calendar entries', 'SuperSecretPassword!')
         await expect(SecurePage.flashAlert).toBeExisting()
         await expect(SecurePage.flashAlert).toHaveText(

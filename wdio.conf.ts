@@ -54,15 +54,12 @@ export const config: WebdriverIO.Config = {
     //
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
-        platformName: 'Android',
-        //browserName: 'Chrome',
-        'appium:deviceName': 'Android Emulator',
-        'appium:platformVersion': '16.0',
-        'appium:automationName': 'UiAutomator2',
-        'appium:appPackage': 'com.google.android.calendar',
-        'appium:appActivity': 'com.android.calendar.LaunchActivity',
+     "platformName": "Android",
+    "appium:deviceName": "Android Emulator",
+    "appium:automationName": "UiAutomator2",
+    "appium:appPackage": "com.google.android.documentsui",
+    "appium:appActivity": "com.android.documentsui.picker.PickActivity",
     }],
-
     //
     // ===================
     // Test Configurations
